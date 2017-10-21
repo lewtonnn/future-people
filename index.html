@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="styles/main.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <button type="button" class="small-data">Load short list</button>
+  <button type="button" class="large-data">Load complete list</button>
+  <div class="search-form">
+    <input class="search-form__field" type="search" placeholder="Search">
+    <button type="button" class="search-form__submit">Find</button>
+  </div>
+
+  <section>
+    <ul class="headers visually-hidden">
+      <li class="headers__item headers__item--id" id="id">ID</li>
+      <li class="headers__item headers__item--first-name" id="firstName">First name</li>
+      <li class="headers__item headers__item--last-name" id="lastName">Last name</li>
+      <li class="headers__item headers__item--email" id="email">E-mail</li>
+      <li class="headers__item headers__item--phone" id="phone">Phone number</li>
+    </ul>
+  </section>
+
+  <div class="loading visually-hidden">
+    <div class="loading__circle"></div>
+    <p class="loading__text">Loading</p>
+  </div>
+
+  <section class="container"></section>
+
+  <ul class="usercard">
+    <li class="usercard__item usercard__item--name"></li>
+    <li class="usercard__item usercard__item--description"></li>
+    <li class="usercard__item usercard__item--address"></li>
+    <li class="usercard__item usercard__item--city"></li>
+    <li class="usercard__item usercard__item--province"></li>
+    <li class="usercard__item usercard__item--zip"></li>
+  </ul>
+
+  <ul class="pages"></ul>
+
+  <template class="user">
+     <ul class="content">
+       <li class="content__item id"></li>
+       <li class="content__item firstname"></li>
+       <li class="content__item lastname"></li>
+       <li class="content__item email"></li>
+       <li class="content__item phone"></li>
+     </ul>      
+   </template>
+
+
+
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+ 
+body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .visually-hidden button {
+  display: none !important;
+}
+
+html {
+  text-align: center;
+}
+
+.small-data,
+.large-data {
+  width: 150px;
+  height: 40px;
+  background: none;
+  border: 2px solid #000;
+  margin-left: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 700;
+}
+
+.small-data:hover,
+.large-data:hover{
+  color: #fff;
+  background: #000;
+}
+
+.small-data {
+  margin-left: 0;
+}
+
+.search-form {
+  margin: 20px 0 20px 0;
+}
+
+ul {
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.headers {
+  margin-bottom: 20px;
+}
+
+.headers__item,
+.content__item {
+  position: relative;
+  text-align: left;
+  border: 1px solid #000;
+  font-size: 20px;
+  line-height: 28px;
+  padding-left: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.headers__item {
+  background-image: url("#");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 15px;
+}
+
+.headers__item--email,
+.email {
+  width: 300px;
+}
+
+.headers__item--id,
+.id {
+  width: 50px;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 0;
+}
+
+.pages li {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;  
+  text-align: center;
+  line-height: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pages li:hover {
+  color: #fff;
+  background: #000;
+}
+
+.usercard {
+  display: block;
+  text-align: left;
+  margin: 20px auto 0;
+  width: 300px;
+  padding: 5px;
+}
+
+.usercard__item {
+  display: block;
+  margin-top: 5px;
+}
+
+.clicked-button {
+  background-color: #000;
+  color: #fff;
+  cursor: default;
+}
+
+.loading {
+  position: relative;
+}
+
+.loading__circle {
+  width: 100px;
+  height: 100px;
+  margin: 50px auto 0;
+  border: 2px solid #000;
+  border-radius: 50%;
+  border-right: none;
+  border-left: none;
+  animation: rotate 1s infinite;
+}
+
+.loading__text {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  right: 0; 
+  animation: blinking 1s infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blinking {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
